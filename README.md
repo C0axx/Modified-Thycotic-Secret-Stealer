@@ -1,4 +1,4 @@
-# Modified-Thycotic-Secret-Stealer for v10.8+ with DPAPI Integration
+# Modified Thycotic Secret Stealer 
 
 Quick modification of [Thycotic Secret Stealer](https://github.com/denandz/SecretServerSecretStealer) to pull AES master Key from DPAPI and then perform Decryption offline and spit output to CSV file. 
 
