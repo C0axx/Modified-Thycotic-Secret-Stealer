@@ -1,5 +1,7 @@
 # Modified-Thycotic-Secret-Stealer for v10.8+ with DPAPI Integration
 
+Quick modification of Thycotic Secret Stealer to pull AES master Key from DPAPI and then perform Decryption offline and spit output to CSV file.
+
 # SQLCMD
 The following SQLCMD will pull all the items from the Database
 ```
@@ -19,6 +21,8 @@ $decrypted = [Security.Cryptography.ProtectedData]::Unprotect([Convert]::FromBas
 ```
 Invoke-SecretDump -SecretServerDataPath <PATH TO .csv> -MasterKey <AES MASTER KEY>
 ```
-Big thanks to curi0usJack and his original post here: https://www.trustedsec.com/blog/thycotic-secret-server-offline-decryption-methodology/
+# References
+Big thanks to curi0usJack and his original post here: 
+https://www.trustedsec.com/blog/thycotic-secret-server-offline-decryption-methodology/
 
 
