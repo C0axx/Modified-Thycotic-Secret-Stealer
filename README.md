@@ -16,4 +16,6 @@ $decrypted = [Security.Cryptography.ProtectedData]::Unprotect([Convert]::FromBas
 ```
 
 # Decrypt and Spit to CSV
+```
 Invoke-SecretDump -SecretServerDataPath <PATH TO .csv> -MasterKey <AES MASTER KEY>
+```
