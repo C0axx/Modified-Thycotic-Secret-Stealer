@@ -1,4 +1,4 @@
-# Modified-Thycotic-Secret-Stealer for <10.5 with DPAPI Integration
+# Modified-Thycotic-Secret-Stealer for v10.8+ with DPAPI Integration
 
 # SQLCMD
 The following SQLCMD will pull all the items from the Database
@@ -19,3 +19,6 @@ $decrypted = [Security.Cryptography.ProtectedData]::Unprotect([Convert]::FromBas
 ```
 Invoke-SecretDump -SecretServerDataPath <PATH TO .csv> -MasterKey <AES MASTER KEY>
 ```
+Big thanks to curi0usJack and his original post here: https://www.trustedsec.com/blog/thycotic-secret-server-offline-decryption-methodology/
+
+
