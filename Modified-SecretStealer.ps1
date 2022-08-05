@@ -148,7 +148,7 @@ function Invoke-SecretDecrypt
     $cryptoTransform = $aes.CreateDecryptor($intermediateKey, $ItemIVBytes);
     $cleartext = [System.Text.Encoding]::Unicode.GetString($cryptoTransform.TransformFinalBlock($ItemBytes, 0, $ItemBytes.Length))
     
-    return $cleartext.Substring(4);
+    return $cleartext.Substring(4); ## Remove Garbage 4 Chars at beginning of Decrypted Password.
 }
 
 
